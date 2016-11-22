@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "XHVersionRequest.h"
-#import "XHVersion.h"
+
 
 @interface AppDelegate ()
 
@@ -25,22 +25,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    
-    //iOS10,首次启动,允许访问网络后,再启动才会显示
-    
-    //1.新版本检测(使用默认提示框)
-     [XHVersion checkNewVersion];
-    
-
-    //2.如果你需要自定义提示框,请使用下面方法
-    [XHVersion checkNewVersionAndCustomAlert:^(XHAppInfo *appInfo) {
-        
-        //appInfo为新版本在AppStore相关信息
-        //请在此处自定义您的提示框
-        NSLog(@"新版本信息:\n 版本号 = %@ \n 更新时间 = %@\n 更新日志 = %@ \n 在AppStore中链接 = %@\n AppId = %@ \n bundleId = %@" ,appInfo.version,appInfo.currentVersionReleaseDate,appInfo.releaseNotes,appInfo.trackViewUrl,appInfo.trackId,appInfo.bundleId);
-        
-    }];
-
     
     [self.window makeKeyAndVisible];
     
