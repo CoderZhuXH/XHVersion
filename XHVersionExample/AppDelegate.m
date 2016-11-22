@@ -26,7 +26,8 @@
     
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     
-
+    //iOS10,首次启动,允许访问网络后,再启动才会显示
+    
     //1.新版本检测(使用默认提示框)
      [XHVersion checkNewVersion];
     
