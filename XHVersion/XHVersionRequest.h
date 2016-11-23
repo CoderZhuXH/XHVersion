@@ -13,6 +13,12 @@ typedef void(^RequestFailure) (NSError *error);
 
 @interface XHVersionRequest : NSObject
 
+/**
+ *  从AppStore中获取App信息
+ *
+ *  @param success 成功回调
+ *  @param failure 失败回调
+ */
 +(void)xh_versionRequestSuccess:(RequestSucess)success failure:(RequestFailure)failure;
 
 @end
