@@ -18,6 +18,7 @@
 		0C553C891DE4145200C69332 /* XHAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C553C881DE4145200C69332 /* XHAppInfo.m */; };
 		0C553C8C1DE418F800C69332 /* XHVersionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C553C8B1DE418F700C69332 /* XHVersionRequest.m */; };
 		0C553C8E1DE4473100C69332 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C553C8D1DE4473100C69332 /* ViewController.xib */; };
+		3729A9532288131D005B347C /* XHUpdateAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A9522288131D005B347C /* XHUpdateAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		0C553C8A1DE418F700C69332 /* XHVersionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVersionRequest.h; sourceTree = "<group>"; };
 		0C553C8B1DE418F700C69332 /* XHVersionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVersionRequest.m; sourceTree = "<group>"; };
 		0C553C8D1DE4473100C69332 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		3729A9522288131D005B347C /* XHUpdateAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHUpdateAlert.m; sourceTree = "<group>"; };
+		3729A95422881335005B347C /* XHUpdateAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHUpdateAlert.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				0C553C8B1DE418F700C69332 /* XHVersionRequest.m */,
 				0C553C871DE4145200C69332 /* XHAppInfo.h */,
 				0C553C881DE4145200C69332 /* XHAppInfo.m */,
+				3729A95422881335005B347C /* XHUpdateAlert.h */,
+				3729A9522288131D005B347C /* XHUpdateAlert.m */,
 			);
 			path = XHVersion;
 			sourceTree = "<group>";
@@ -246,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -297,6 +303,7 @@
 				0C553C861DE4142200C69332 /* XHVersion.m in Sources */,
 				0C553C581DE4127A00C69332 /* ViewController.m in Sources */,
 				0C553C551DE4127A00C69332 /* AppDelegate.m in Sources */,
+				3729A9532288131D005B347C /* XHUpdateAlert.m in Sources */,
 				0C553C891DE4145200C69332 /* XHAppInfo.m in Sources */,
 				0C553C521DE4127A00C69332 /* main.m in Sources */,
 			);
