@@ -19,6 +19,7 @@
 		0C553C8C1DE418F800C69332 /* XHVersionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C553C8B1DE418F700C69332 /* XHVersionRequest.m */; };
 		0C553C8E1DE4473100C69332 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C553C8D1DE4473100C69332 /* ViewController.xib */; };
 		3729A9532288131D005B347C /* XHUpdateAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A9522288131D005B347C /* XHUpdateAlert.m */; };
+		3729A97D2288285F005B347C /* XHVersion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3729A97C2288285F005B347C /* XHVersion.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		0C553C8D1DE4473100C69332 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		3729A9522288131D005B347C /* XHUpdateAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHUpdateAlert.m; sourceTree = "<group>"; };
 		3729A95422881335005B347C /* XHUpdateAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XHUpdateAlert.h; sourceTree = "<group>"; };
+		3729A97C2288285F005B347C /* XHVersion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XHVersion.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		0C553C831DE413CD00C69332 /* XHVersion */ = {
 			isa = PBXGroup;
 			children = (
+				3729A97C2288285F005B347C /* XHVersion.bundle */,
 				0C553C841DE4142200C69332 /* XHVersion.h */,
 				0C553C851DE4142200C69332 /* XHVersion.m */,
 				0C553C8A1DE418F700C69332 /* XHVersionRequest.h */,
@@ -274,6 +277,7 @@
 			files = (
 				0C553C601DE4127A00C69332 /* LaunchScreen.storyboard in Resources */,
 				0C553C8E1DE4473100C69332 /* ViewController.xib in Resources */,
+				3729A97D2288285F005B347C /* XHVersion.bundle in Resources */,
 				0C553C5D1DE4127A00C69332 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
