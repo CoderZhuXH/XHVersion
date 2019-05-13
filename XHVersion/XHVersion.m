@@ -9,6 +9,7 @@
 #import "XHVersion.h"
 #import <StoreKit/StoreKit.h>
 #import "XHVersionRequest.h"
+#import "XHUpdateAlert.h"
 
 @interface XHVersion()<UIAlertViewDelegate,SKStoreProductViewControllerDelegate>
 
@@ -45,23 +46,14 @@
     [self versionRequest:^(XHAppInfo *appInfo) {
     
         NSString *updateMsg = [NSString stringWithFormat:@"%@",appInfo.releaseNotes];
+        NSString *updateVersion = [NSString stringWithFormat:@"%@",appInfo.version];
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_8_0
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"发现新版本" message:updateMsg delegate:self cancelButtonTitle:@"关闭" otherButtonTitles:@"更新", nil];
         [alertView show];
 #endif
       
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"发现新版本" message:updateMsg preferredStyle:UIAlertControllerStyleAlert];
-        [alert addAction:[UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-
-        }]];
-        [alert addAction:[UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-
-            [self openInAppStoreForAppURL:self.appInfo.trackViewUrl];
-            
-        }]];
-        
-        [[self window].rootViewController presentViewController:alert animated:YES completion:nil];
+        [XHUpdateAlert showUpdateAlertWithVersion:updateVersion Description:updateMsg];
 #endif
         
     }];
